@@ -1,0 +1,55 @@
+.main{
+    background-color: grey;
+    height: 220px;
+    width: 90px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#feurouge{
+    border: 1px solid red;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: auto;
+   
+}
+
+#feurouge:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+
+#feuorange{
+    border: 1px solid orange;
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+#feuorange:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
+#feuvert{
+    border: 1px solid green;
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+#feuvert:hover {
+    background-color: black;
+    border: 1px solid black;
+}
+
