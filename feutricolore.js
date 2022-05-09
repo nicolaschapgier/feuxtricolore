@@ -2,9 +2,10 @@ var lightredbutton = document.getElementById("lightredbutton");
 var lightorangebutton = document.getElementById("lightorangebutton");
 var lightgreenbutton = document.getElementById("lightgreenbutton");
 var couleurNoir = "#000000";
-var lightred = "#f00020";
-var lightorange = "#ff7f00";
+var lightred = "#FF0000";
+var lightorange = "#ffa500";
 var lightgreen = "#008000";
+var borderwhite = "1px solid white";
 var feurouge = document.getElementById('feurouge');
 var feuorange = document.getElementById('feuorange');
 var feuvert = document.getElementById('feuvert');
@@ -33,11 +34,11 @@ function afficherVert(color){
 
 function situationNormal(color){
     feurouge.style.backgroundColor = lightred;
-    feurouge.style.border = lightred;
     feuorange.style.backgroundColor = lightorange;
-    feuorange.style.border = lightorange;
     feuvert.style.backgroundColor = lightgreen;
-    feuvert.style.border = lightgreen;
+    feurouge.style.border= borderwhite;
+    feuorange.style.border= borderwhite;
+    feuvert.style.border= borderwhite;
 }
 
 lightredbutton.addEventListener("click",function(){
