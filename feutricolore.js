@@ -1,62 +1,53 @@
-var lightredbutton = document.getElementById("lightredbutton");
-var lightorangebutton = document.getElementById("lightorangebutton");
-var lightgreenbutton = document.getElementById("lightgreenbutton");
-var couleurNoir = "#000000";
-var lightred = "#FF0000";
-var lightorange = "#ffa500";
-var lightgreen = "#008000";
-var borderwhite = "1px solid white";
-var feurouge = document.getElementById('feurouge');
-var feuorange = document.getElementById('feuorange');
-var feuvert = document.getElementById('feuvert');
+var lightRedButton = document.getElementById("lightRedButton");
+var lightOrangeButton = document.getElementById("lightOrangeButton");
+var lightGreenButton = document.getElementById("lightGreenButton");
+var blackColor = "#000000";
+var redLight = "#FF0000";
+var orangeLight = "#ffa500";
+var greenLight = "#008000";
+var whiteBorder = "1px solid white";
+var redFire = document.getElementById("redFire");
+var orangeFire = document.getElementById("orangeFire");
+var greenFire = document.getElementById("greenFire");
 
-function afficherRouge(color){
-    feuorange.style.backgroundColor = color;
-    feuorange.style.border = color;
-    feuvert.style.backgroundColor = color;
-    feuvert.style.border = color;
-}
+const toggle = (value) => {
+  getDefaultColor();
 
-function afficherOrange(color){
-    feurouge.style.backgroundColor = color;
-    feurouge.style.border = color;
-    feuvert.style.backgroundColor = color;
-    feuvert.style.border = color;
-}
+  return value === "red"
+    ? print(orangeFire, greenFire)
+    : value === "orange"
+    ? print(redFire, greenFire)
+    : print(redFire, orangeFire);
+};
 
-function afficherVert(color){
-    feurouge.style.backgroundColor = color;
-    feurouge.style.border = color;
-    feuorange.style.backgroundColor = color;
-    feuorange.style.border = color;
-}
+const print = (firstColorToChange, secondColorToChange) => {
+  firstColorToChange.style.backgroundColor = "#000000";
+  firstColorToChange.style.border = "#000000";
+  secondColorToChange.style.backgroundColor = "#000000";
+  secondColorToChange.style.border = "#000000";
+};
 
+const getDefaultColor = () => {
+  redFire.style.backgroundColor = redLight;
+  orangeFire.style.backgroundColor = orangeLight;
+  greenFire.style.backgroundColor = greenLight;
+  redFire.style.border = whiteBorder;
+  orangeFire.style.border = whiteBorder;
+  greenFire.style.border = whiteBorder;
+};
 
-function situationNormal(color){
-    feurouge.style.backgroundColor = lightred;
-    feuorange.style.backgroundColor = lightorange;
-    feuvert.style.backgroundColor = lightgreen;
-    feurouge.style.border= borderwhite;
-    feuorange.style.border= borderwhite;
-    feuvert.style.border= borderwhite;
-}
-
-lightredbutton.addEventListener("click",function(){
-    afficherRouge(couleurNoir);
+lightRedButton.addEventListener("click", () => {
+  toggle("red");
 });
 
-lightorangebutton.addEventListener("click",function(){
-    afficherOrange(couleurNoir);
+lightOrangeButton.addEventListener("click", () => {
+  toggle("orange");
 });
 
-lightgreenbutton.addEventListener("click",function(){
-    afficherVert(couleurNoir);
+lightGreenButton.addEventListener("click", () => {
+  toggle("green");
 });
 
-normalboutton.addEventListener("click",function(){
-    situationNormal();
-})
-
-
-
-
+normalboutton.addEventListener("click", () => {
+  getDefaultColor();
+});
