@@ -1,0 +1,125 @@
+.main {
+  background-color: grey;
+  height: 220px;
+  width: 90px;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#redFire {
+  border: 1px solid white;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+#redFire:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
+#orangeFire {
+  border: 1px solid white;
+  background-color: orange;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+#orangeFire:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
+#greenFire {
+  border: 1px solid white;
+  background-color: green;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+#greenFire:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
+#lightRedButton {
+  transition: 1s;
+  background: linear-gradient(to right, red 50%, black 50%);
+  background-position: right bottom;
+  border-radius: 30px;
+  background-size: 200% 100%;
+  margin: 10px;
+  margin-top: 30px;
+  color: white;
+  border-color: aliceblue;
+}
+#lightRedButton:hover {
+  background-position: left;
+}
+
+#lightOrangeButton {
+  transition: 1s;
+  background: linear-gradient(to right, orange 50%, black 50%);
+  background-position: right bottom;
+  border-radius: 30px;
+  background-size: 200% 100%;
+  margin: 10px;
+  color: white;
+  margin-top: 40px;
+  border-color: aliceblue;
+}
+#lightOrangeButton:hover {
+  background-position: left;
+}
+
+#lightGreenButton {
+  transition: 1s;
+  background: linear-gradient(to right, green 50%, black 50%);
+  background-position: right bottom;
+  border-color: aliceblue;
+  border-radius: 30px;
+  background-size: 200% 100%;
+  margin: 10px;
+  color: white;
+  margin-top: 40px;
+}
+#lightGreenButton:hover {
+  background-position: left;
+}
+
+#normalboutton {
+  transition: 1s;
+  background: linear-gradient(to right, red 5%, orange 25%, green 50%);
+  background-position: right bottom;
+  border-radius: 30px;
+  border-color: aliceblue;
+  background-size: 200% 100%;
+  margin: 10px;
+  color: white;
+  width: 200px;
+  height: 50px;
+  margin-top: 73px;
+}
+
+#normalboutton:hover {
+  background-position: left;
+}
+
+.lesboutons {
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.container {
+  display: flex;
+}
